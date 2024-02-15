@@ -7,7 +7,6 @@
 // isFollwo = true;
 // console.log(isFollwo);
 
-
 // const student = {
 //     fullName : "mahib khan",
 //     age : 19,
@@ -27,7 +26,6 @@
 //     price: 250,
 // };
 
-
 // const profile ={
 //     userName : "mahib",
 //     follower: 3000,
@@ -35,7 +33,6 @@
 //     isFollow: true,
 // };
 // console.log (profile);
-
 
 //CHAPTER 2 Operators and Conditional statements
 
@@ -58,7 +55,6 @@
 
 // a --;
 // console.log("a = ", a);
-
 
 // Assignment Operators
 
@@ -125,7 +121,6 @@
 
 // console.log (name);
 
-
 //practice
 
 // let num = prompt("Enter a number");
@@ -135,7 +130,6 @@
 // }else{
 //     console.log(num, "is no multiple of 5");
 // }
-
 
 // let score = prompt("Enter your marks");
 // let grade;
@@ -150,9 +144,7 @@
 // }else if(score >= 0 && score <= 50){
 //     grade ="F";
 // }
-// console.log("your grade is",grade); 
-
-
+// console.log("your grade is",grade);
 
 // CHAPTER 3 Loops and Strings
 // print 1 to 10000
@@ -163,13 +155,12 @@
 //Calculate sum of 1 to 5
 
 // let sum = 0;
-// for 
+// for
 //     (let i = 1; i<= 7; i++){
 
 // sum = sum + i;
 // }
 // console.log("sum =", sum);
-
 
 //whole loop
 // let i = 1;
@@ -179,7 +170,6 @@
 // }
 
 // do while loop
-
 
 //practice
 
@@ -209,11 +199,9 @@
 // str = str.toUpperCase();
 // console.log(str);
 
-
 //trim
 // let str = "    mahib khan js       ";
 // console.log(str.trim());
-
 
 // slice
 
@@ -231,17 +219,12 @@
 // let str = "hello";
 // console.log(str.replace("hello","mahib"));
 
-
 //charAt
 
 // let str = "Ilovemom";
 // console.log(str.charAt(6));
 
-
-
-
 //practice Question
-
 
 // let fullName = prompt("Enter your name without spaces");
 // let username = "@" + fullName +fullName.length;
@@ -253,7 +236,6 @@
 // let marks = [97,85,86,50,79.];
 // console.log(marks);
 // console.log(marks . length)
-
 
 // let heroes = ["mahibkhan","ali","khan","gul","ajab"];
 // console.log(heroes
@@ -270,16 +252,37 @@
 // let avg = sum / marks.length;
 // console.log(`avg marks of the class = ${avg}`)
 
+//ARRAY METHOD
 
+//push
+// const fruits = ["banana", "apply", "orange"];
+// fruits.push("kivai");
+// console.log(fruits)
 
+//pop
 
+// const fruits = ["banana", "apply", "orange"];
+// fruits.push();
+// console.log(fruits)
 
+//concat
 
+//join two arrays
 
+// let acHeroes = ["thor", "ali", "gul", "khan"];
+// let dcHeroes = ["hameed", "mubeen"];
 
+// let heroes = acHeroes.concat(dcHeroes);
+// console.log(heroes)
 
+//practice question
 
+// const compnies = ["google", "bloomberg", "microsoft", "uber"];
 
+// compnies.splice(2, 1, "ola");
+
+// compnies.push("amzone");
+// console.log(compnies);
 
 // for (let i = 1; i <= 10; i++) {
 //     }
@@ -287,15 +290,131 @@
 //    console.log(`${i} * ${j} = ${i * j}`);
 //   }
 
+//CLASS TASK
+
+// let userInput = prompt("Enter your name!");
+// let strReverse = "";
+// for(let index = userInput.length)
+
+//FUNCTION  IN JS
+
+//function 2 numbers, sum
+
+// function sum(x, y) {
+//local vaeirbles scope
+
+//     s = x + y;
+//     console.log(x);
+//     return s;
+// }
+
+// let val = sum(2, 4);
+// console.log(x);
+// console.log(val);
+
+//arrow function
+
+//  const arrowMul =(a, b) => {
+//     console.log(a*b);
+//  }
+
+//  arrowMul = 5;
+
+//practice question
+
+// function countVowels(str) {
+//   let count = 0;
+   //countvawels: college for boys =5
+//   for (const char of str) {
+//     if (
+//       char === "a" ||
+//       char === "e" ||
+//       char === "i" ||
+//       char === "o" ||
+//       char === "u"
+//     ) {
+//       count++;
+//     }
+//   }
+
+//   console.log(count);
+// }
+
+
+
+//FOREACH LOOP ARRAY IN JS
+
+// let arr = ["Peshawar", "Islamabad", "Karachi", "Lahore"];
+// arr.forEach((val, idx, arr) => {
+//     console.log(val.toUpperCase(), idx, arr);
+// })
+
+
+
+//practice Question
+
+// let nums = [1, 2, 3, 4, 5, 6];
+// nums.forEach((num) =>{
+//     console.log(num * num);  //num**2
+// })
+
+
+
+
+//map method in js
+
+
+
+
+ 
+
+
+
+//filter method in js
+
+
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+// let evenArr = arr.filter((val) =>{
+//     return val % 2 === 0;
+// });
+
+// console.log(evenArr);
 
 
 
 
 
+//practice Question
 
 
+// let marks = [96, 65, 34, 49, 99, 97,87]
+
+//  let toppers = marks.filter((val) => {
+//     return val > 90;
+// })
+// console.log(toppers)
 
 
+let n = prompt("Enter a number");
+
+let arr = [];
+
+for(let i=1; i<=n; i++ ){
+    arr[i-1] = i;
+}
+console.log(arr);
 
 
+ let sum = arr.reduce((prew, curr) =>{
+    return prew + curr;
+})
 
+console.log("sum =",sum)
+
+
+let factoorial = arr.reduce((prew, curr) =>{
+    return prew * curr;
+});
+
+
+console.log("foctoorial =", factoorial)
