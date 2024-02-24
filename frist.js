@@ -395,26 +395,70 @@
 // console.log(toppers)
 
 
-let n = prompt("Enter a number");
+// let n = prompt("Enter a number");
 
-let arr = [];
+// let arr = [];
 
-for(let i=1; i<=n; i++ ){
-    arr[i-1] = i;
+// for(let i=1; i<=n; i++ ){
+//     arr[i-1] = i;
+// }
+// console.log(arr);
+
+
+//  let sum = arr.reduce((prew, curr) =>{
+//     return prew + curr;
+// })
+
+// console.log("sum =",sum)
+
+
+// let factoorial = arr.reduce((prew, curr) =>{
+//     return prew * curr;
+// });
+
+
+// console.log("foctoorial =", factoorial)
+
+
+
+//chai our code function
+
+// function myFunction(num1, num2){
+//     console.log(num1 + num2);
+     
+// }
+// myFunction(4 , 8)
+
+
+   
+
+
+
+
+
+
+
+
+
+
+const cake = +prompt("Enter Kg")
+
+const baskat = +prompt("Enter Kg")
+
+
+
+function multipleItem(item1, item2){
+
+   const cake = 50
+
+   const baskat = 100
+
+   const cakes = item1 * cake
+
+   const baskats = item2 * baskat
+
+   console.log("cake price", cakes, "basket price",baskats)
+
 }
-console.log(arr);
 
-
- let sum = arr.reduce((prew, curr) =>{
-    return prew + curr;
-})
-
-console.log("sum =",sum)
-
-
-let factoorial = arr.reduce((prew, curr) =>{
-    return prew * curr;
-});
-
-
-console.log("foctoorial =", factoorial)
+multipleItem(cake,baskat)
